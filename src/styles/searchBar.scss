@@ -1,0 +1,50 @@
+header {
+  display: grid;
+  gap: 1.6rem;
+  padding: 2rem;
+  border: var(--border);
+  border-radius: 1rem;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+
+  h1,
+  span {
+    font-weight: 800;
+  }
+
+  h1 {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+
+    span {
+      color: var(--primary-color);
+      margin-left: 0.1rem;
+    }
+
+    svg {
+      margin-right: 0.8rem;
+    }
+  }
+
+  div#input-wrapper {
+    display: flex;
+    gap: 0.8rem;
+    border-radius: 0.8rem;
+    border: var(--border);
+    transition: border 160ms ease-in-out;
+
+    &:has(input:focus) {
+      border-color: var(--primary-color);
+    }
+
+    input {
+      flex: 1;
+      padding: 1rem 0.4rem;
+      border: none;
+      background-color: transparent;
+      text-indent: 0.8rem;
+      outline: none;
+    }
+  }
+}
